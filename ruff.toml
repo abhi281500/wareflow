@@ -1,0 +1,20 @@
+target-version = "py313"
+line-length = 120
+
+[lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+ignore = [
+    "B008", # do not perform function calls in argument defaults (needed for FastAPI Depends)
+    "E501", # line length handled by ruff format
+]
+
+[lint.isort]
+known-first-party = ["app"]
