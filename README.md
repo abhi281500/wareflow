@@ -106,7 +106,7 @@ When an allocated order is cancelled:
 ### 1. Clone & Setup Virtual Environment
 ```powershell
 # Clone the repository
-git clone https://github.com/your-username/wareflow.git
+git clone https://github.com/abhi281500/wareflow.git
 cd wareflow
 
 # Create and activate virtual environment
